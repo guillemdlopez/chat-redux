@@ -28,6 +28,7 @@ class ChannelList extends Component {
       </li>
     );
   };
+
   render() {
     const style = {
       width: "15vw",
