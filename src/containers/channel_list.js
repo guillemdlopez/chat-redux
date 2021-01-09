@@ -32,7 +32,7 @@ class ChannelList extends Component {
     const style = {
       width: "15vw",
       background: "#F4F4F4",
-      padding: "20px",
+      padding: "30px",
     };
     return (
       <div className="channel-list" style={style}>

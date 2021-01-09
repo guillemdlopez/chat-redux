@@ -41,7 +41,9 @@ class MessageList extends Component {
         }}
       >
         <div className="channel-title">
-          <h4>Channel #{this.props.selectedChannel}</h4>
+          <h4 style={{ margin: "0px" }}>
+            Channel #{this.props.selectedChannel}
+          </h4>
         </div>
         <div className="channel-messages" style={style}>
           {this.props.messages.map((message) => {
