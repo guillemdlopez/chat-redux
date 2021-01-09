@@ -3,8 +3,8 @@ export const POST_MESSAGE = "POST_MESSAGE";
 export const SELECT_CHANNEL = "SELECT_CHANNEL";
 const BASE_URL = "https://wagon-chat.herokuapp.com/";
 
-export function fetchMessages() {
-  const promise = fetch(`${BASE_URL}/general/messages`).then((response) =>
+export function fetchMessages(channel) {
+  const promise = fetch(`${BASE_URL}/${channel}/messages`).then((response) =>
     response.json()
   );
 

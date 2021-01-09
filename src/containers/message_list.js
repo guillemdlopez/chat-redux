@@ -7,11 +7,11 @@ import { fetchMessages } from "../actions/index";
 
 class MessageList extends Component {
   componentWillMount() {
-    this.props.fetchMessages();
+    this.fetchMessages();
   }
 
   componentDidMount() {
-    this.refresh = setInterval(this.props.fetchMessages, 5000);
+    this.refresh = setInterval(this.fetchMessages, 5000);
   }
 
   componentDidUpdate() {
@@ -21,6 +21,10 @@ class MessageList extends Component {
   componentWillUnmount() {
     clearInterval(this.refresh);
   }
+
+  fetchMessages = () => {
+    this.props.fetchMessages(this.props.selectedChannel);
+  };
 
   render() {
     const style = {
