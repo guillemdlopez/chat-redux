@@ -1,7 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
 body {
-  font-family: Helvetica;
+  font-family: OpenSans, sans-serif;
 }
-.app {
-  margin-top: 20px;
+
+.message {
   margin-bottom: 20px;
+}
+
+.chat-logo {
+  width: 45px;
+}
+
+.logo-container {
+  width: 5vw;
+  text-align: center;
+  background: #dbdbdb;
+  padding-top: 10px;
+}
+
+.channel-chat {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-form {
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 90px;
+  border-top: 1px solid #f4f4f4;
+}
+
+button {
+  background: #d23332;
+  color: white;
+  border: none;
+  font-family: OpenSans, sans-serif;
+  height: 45px;
+  border-radius: 0px 2px 2px 0px;
+  margin-left: -2px;
+  padding: 12px 17px;
+  font-weight: 600;
+}
+
+.input-field {
+  width: 100%;
+  height: 45px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+
+.messages-container {
+  overflow: scroll;
+}
+
+.channels {
+  padding-left: 0px;
+  margin-top: 40px;
+}
+
+.channel {
+  display: block;
+  cursor: pointer;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.active {
+  font-weight: bold;
+  color: black;
+}
+
+.channel-title {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #f4f4f4;
 }
