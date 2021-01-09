@@ -42,7 +42,10 @@ class MessageList extends Component {
       >
         <div className="channel-title">
           <h4 style={{ margin: "0px" }}>
-            Channel #{this.props.selectedChannel}
+            Channel{" "}
+            <span style={{ fontWeight: "bold" }}>
+              #{this.props.selectedChannel}
+            </span>
           </h4>
         </div>
         <div className="channel-messages" style={style}>
