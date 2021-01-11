@@ -40,7 +40,7 @@ class Message extends Component {
               color: "gray",
             }}
           >
-            {this.props.message.created_at}
+            {new Date(this.props.message.created_at).toLocaleDateString()}
           </small>
         </div>
         <p style={{ color: "black" }}>{emojify(this.props.message.content)}</p>

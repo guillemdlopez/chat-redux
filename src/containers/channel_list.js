@@ -5,15 +5,15 @@ import { bindActionCreators } from "redux";
 import { selectChannel, fetchMessages } from "../actions/index";
 
 class ChannelList extends Component {
-  handleClick = (channel) => {
-    this.props.selectChannel(channel);
-  };
-
   componentWillReceiveProps(nextProps) {
     if (nextProps.selectedChannel !== this.props.selectedChannel) {
       this.props.fetchMessages(nextProps.selectedChannel);
     }
   }
+
+  handleClick = (channel) => {
+    this.props.selectChannel(channel);
+  };
 
   renderChannel = (channel) => {
     return (
@@ -28,6 +28,7 @@ class ChannelList extends Component {
       </li>
     );
   };
+
   render() {
     const style = {
       width: "15vw",
